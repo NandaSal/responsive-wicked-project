@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--#region head-->
+<head>
+  <!--meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--title-->
+  <title>Madame Morrible's Sorcery Seminar</title>
+  <!--css-->
+  <link rel="stylesheet" href="src/css/styles.css">
+  <!--fonts (space grotesk)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<!--#endregion-->
+
+<body class="body">
+  <!--header-->
+  <header class="header">
+    <!--nav-->
+    <nav class="nav">
+      <a class="nav__list--link" href="index.html">
+        <img class="logo" src="/src/images/logo1.png" rel="Shiz Logo">
+      </a>
+      <ul class="nav__list">
+        <li class="nav__list--item">
+          <a 
+          class="nav__list--link" 
+          href="#information">Information
+          </a>
+        </li>
+        <li class="nav__list--item">
+          <a 
+          class="nav__list--link" 
+          href="#signup">Sign-up
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="main__title">
+      <img class="main__img" src="/src/images/logo2.png"> 
+      <br> Presents: <br> 
+      Madame Morrible's Sorcery Seminar
+    </h1>
+    
+    <section class="information" id="information">
+      <p class="information__text">You have the privileged opportunity of signing up for Shiz University's grandiose Sorcery Seminar, led by the brilliant Dean of Sorcery Studies, Madame Morrible.</p>
+
+      <div class="about">
+        <h2 class="about__title">About Madame Morrible</h2>
+        <img class="about__img" src="/src/images/madameimg.jpg" alt="Madame Morrible">
+        <p class="information__text">Madame Morrible is the beloved Dean of Sorcery Studies at Shiz University, as well as its regal headmistress. With a specialty in weather sorcery, our dear Madame is revered by the student body as well as by her peers, who admire her power, wisdom, and intellect.</p>
+        <p class="information__text">Some of the subjects that will be explored in this year's Sorcery Seminar include but are not limited to:</p>
+        <ul class="information__ul information__text">
+          <li class="information__li">Advanced Abjuration</li>
+          <li class="information__li">Advanced Divination</li>
+          <li class="information__li">Advanced Enchantment</li>
+          <li class="information__li">Advanced Evocation</li>
+          <li class="information__li">Advanced Illusion</li>
+          <li class="information__li">Advanced Levitation</li>
+          <li class="information__li">Advanced Transmutation</li>
+        </ul>
+      </div>
+
+      <div class="students">
+        <h3 class="students__title">Students In Attendance</h3>
+        <div class="students__container">
+          <div class="student__1">
+            <img class="student__img" src="/src/images/elphaba.jpg" alt="Elphaba Thropp">
+            <h4 class="student__name">Elphaba Thropp</h4>
+          </div>
+          <div class="student__2">
+            <img class="student__img" src="/src/images/Glinda.jpg" alt="Galinda Upland">
+            <h4 class="student__name">Galinda Upland</h4>
+          </div>
+        </div>
+      </div>
+
+      <section class="signup" id="signup">
+        <h3 class="signup__title">Sign-up for the Sorcery Seminar</h3>
+        <form class="signup__form">
+          <label for="name">Name:
+            <input type="text" placeholder="Your Name" name="name">
+          </label>
+          <label for="email">Email:
+            <input type="email" placeholder="Your Student Email" name="email">
+          </label>
+          <label for="regnum">Student Registration Number:
+            <input type="text" placeholder="Your Registration Number" name="regnum">
+          </label>
+          <label for="test">Are you willing to take a test? <br>
+            <input type="radio" name="test" required> Yes
+            <input type="radio" name="test"> No
+          </label>
+          <input class="button" type="Submit" id="submit">
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <p class="footer__text">Copyright Shiz University 2025</p>
+  </footer>
+</body>
+</html>

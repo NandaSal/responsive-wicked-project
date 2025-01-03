@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Arterium Side Outline';
+  src: url(/src/font/Arterium-SideOutline.otf);
+}
+
+@font-face {
+  font-family: 'Arterium Side';
+  src: url(/src/font/Arterium-Side.otf);
+}
+
+/* global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .body {
+    font-size: 2rem;
+  }
+}
+
+.header {
+  background-color: #405DBC;
+  width: 100%;
+  height: 4rem;
+  color: #FBAF41;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-top: .3rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: large;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: 'Arterium Side';
+}
+
+.nav__list--link {
+  text-decoration: none;
+  color: #FBAF41;
+}
+
+.nav__list--link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #d4a200;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.body {
+  background-color: #6E84CE;
+  color: white;
+  font-family: 'Verdana', sans-serif;
+}
+
+.main__title, .about__title, .students__title, .signup__title {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'Arterium Side';
+  letter-spacing: 1.8px;color:#FBAF41;
+}
+
+.main__title {
+  margin-top: 0.8rem;
+}
+
+.main__img {
+  width: 59%;
+}
+
+.information__text {
+  margin: 1.5rem;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.information__ul {
+  padding-inline: 2.3rem;
+}
+
+.information__li {
+  list-style-type: armenian;
+}
+
+.about {
+  margin: 0 auto;
+}
+
+.about__img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+  border: 2px solid #FBAF41;
+}
+
+.students__container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.student__img {
+  width: 8rem;
+  border-radius: 20px;
+  border: 2px solid #FBAF41;
+}
+
+@media screen and (min-width: 350px) and (max-width: 375px) {
+  .student__img {
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 426px) {
+  .student__img {
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 427) and (max-width: 768px) {
+  .student__img {
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .student__img {
+    width: 20rem;
+  }
+}
+
+.student__name {
+  text-align: center;
+  padding: .5rem;
+}
+
+.signup__form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #FBAF41;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .signup__form {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.button {
+  background-color: #6E84CE;
+  border-radius: 5px;
+  color:#FBAF41;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #405DBC;
+}
+
+.footer {
+  background-color: #405DBC;
+  margin-top: 3rem;
+  width: 100%;
+  height: 5rem;
+}
+
+.footer__text {
+  color:#FBAF41;
+  padding: 1rem;
+  text-align: left;
+}
